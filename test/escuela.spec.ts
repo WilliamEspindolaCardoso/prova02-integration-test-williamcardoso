@@ -30,7 +30,6 @@ describe('Escuela API', () => {
         })
         .expectStatus(StatusCodes.CREATED)
         .returns('id');
-        // console.log(userId)
     });
 
     it('Busca o usuário cadastrado', async () => {
@@ -66,7 +65,7 @@ describe('Escuela API', () => {
         .spec()
         .post(`${baseUrl}/users`)
         .withJson({
-          email: 'william@gmail.com',
+          email: 'william2025@gmail.com',
           name: 'william',
           password: '12345',
           role: 'admin',
@@ -74,7 +73,6 @@ describe('Escuela API', () => {
         })
         .expectStatus(StatusCodes.CREATED)
         .returns('id');
-        // console.log(userId)
     });
   });
 
@@ -96,7 +94,6 @@ describe('Escuela API', () => {
             })
         .expectStatus(StatusCodes.CREATED)
         .returns('id');
-        // console.log(productId)
     });
 
     it('Busca o produto cadastrado', async () => {
@@ -134,7 +131,7 @@ describe('Escuela API', () => {
         .spec()
         .post(`${baseUrl}/products`)
         .withJson({
-          "title": "Sofa Retratil",
+          "title": "Sofa Retratil 3 Lugares",
           "price": 699.00,
           "description": "Sofa 3 Lugares",
           "categoryId": 3,
@@ -144,7 +141,6 @@ describe('Escuela API', () => {
             })
         .expectStatus(StatusCodes.CREATED)
         .returns('id');
-        // console.log(productId)
     });
   });
 
